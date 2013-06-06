@@ -5,7 +5,8 @@ apt-get install juju lxc apt-cacher-ng libzookeeper-java zookeeper
 ssh-keygen -t rsa
 juju bootstrap
 sed -i "s/ec2/local/" ~/.juju/environments.yaml
-echo " data-dir:/root/hcontainers" >> ~/.juju/environments.yaml
+echo "    data-dir: /root/hcontainers" >> ~/.juju/environments.yaml
+mkdir /root/hcontainers
 juju bootstrap
 juju deploy hadoop hadoop-master
 juju deploy hadoop hadoop-slavecluster
