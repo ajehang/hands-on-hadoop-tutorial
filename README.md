@@ -14,4 +14,5 @@ My hadoop tutorial for service computing
     ssh ubuntu@x.x.x.x (x=ip address obtained in step 9)
 9. wget -o /dev/null http://github.com/ajehang/hands-on-hadoop-tutorial/raw/master/script.sh
 10. chmod +x script.sh
+11. ./script.sh
     
