@@ -1,0 +1,9 @@
+# make a new directory
+add-apt-repository -y ppa:juju/pkgs
+apt-get update 
+apt-get install juju lxc apt-cacher-ng libzookeeper-java zookeeper
+ssh-keygen -t rsa
+juju bootstrap
+cd ~/.juju
+wget -o /dev/null http://github.com/ajehang/hands-on-hadoop-tutorial/raw/master/enviroments.yaml
+cd ..

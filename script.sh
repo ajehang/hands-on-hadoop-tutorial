@@ -2,6 +2,7 @@
 mkdir count_example
 cd count_example
 cp /usr/lib/hadoop/hadoop-examples-1.0.2.jar .
+cp /usr/lib/hadoop/contrib/streaming/hadoop-streaming-1.0.2.jar .
 # get the files (could be done with a git clone, but wget is more prevalent than git for now)
 wget -o /dev/null http://github.com/ajehang/hands-on-hadoop-tutorial/raw/master/mapper.py
 wget -o /dev/null http://github.com/ajehang/hands-on-hadoop-tutorial/raw/master/reducer.py
