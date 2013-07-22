@@ -5,6 +5,13 @@ VERSION=hadoop-1.1.2
 apt-get update
 apt-get -y install openjdk-6-jdk
 
+# set hostnames
+echo "10.1.0.20    master" >> /etc/hosts
+echo "10.1.0.75    slave1" >> /etc/hosts
+echo "10.1.0.83    slave2" >> /etc/hosts
+echo "10.1.0.130    slave3" >> /etc/hosts
+echo "10.1.0.131    slave4" >> /etc/hosts
+
 #download hadoop, untar, put in /usr/local
 cd /tmp
 wget "$MIRROR/$VERSION".tar.gz

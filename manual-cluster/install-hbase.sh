@@ -37,5 +37,6 @@ rm hadoop-core-1.0.0.jar
 
 echo "export HBASE_MANAGES_ZK=true" >>hadoop-env.sh
 
-
+cd /home/hduser/
+wget https://github.com/ajehang/hands-on-hadoop-tutorial/raw/master/manual-cluster/conf/.bashrc
 
