@@ -1,10 +1,10 @@
 #!/bin/bash
 #run as hduser
 VERSION=hadoop-1.1.2
-ssh-copy-id -i $HOME/.ssh/id_rsa.pub hduser@slave1
-ssh-copy-id -i $HOME/.ssh/id_rsa.pub hduser@slave2
-ssh-copy-id -i $HOME/.ssh/id_rsa.pub hduser@slave3
-ssh-copy-id -i $HOME/.ssh/id_rsa.pub hduser@slave4
+scp /home/hduser/.ssh/id_rsa.pub root@slave1:/root
+scp /home/hduser/.ssh/id_rsa.pub root@slave2:/root
+scp /home/hduser/.ssh/id_rsa.pub root@slave3:/root
+scp /home/hduser/.ssh/id_rsa.pub root@slave4:/root
 cd /usr/local/$VERSION/conf
 rm masters
 wget https://github.com/ajehang/hands-on-hadoop-tutorial/raw/master/manual-cluster/conf/masters
