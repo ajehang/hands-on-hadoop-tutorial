@@ -22,7 +22,7 @@ echo "export JAVA_HOME=/usr/lib/jvm/java-1.6.0-openjdk-amd64" >> hadoop-env.sh
 rm hbase-site.xml
 wget https://github.com/ajehang/hands-on-hadoop-tutorial/raw/master/manual-cluster/conf/hbase-site.xml
 rm regionservers
-wget https://github.com/ajehang/hands-on-hadoop-tutorial/blob/master/manual-cluster/conf/regionservers
+wget wget https://github.com/ajehang/hands-on-hadoop-tutorial/blob/master/manual-cluster/conf/regionservers
 # chmod, symbolic links
 cd /usr/local
 ln -s $VERSION hbase
@@ -40,4 +40,4 @@ echo "export HBASE_MANAGES_ZK=true" >>hadoop-env.sh
 cd /home/hduser/
 wget https://github.com/ajehang/hands-on-hadoop-tutorial/raw/master/manual-cluster/conf/.bashrc
 
-mv .bashrc.1 .bashrc
+#mv .bashrc.1 .bashrc
