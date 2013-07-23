@@ -16,7 +16,7 @@ rm "$VERSION".tar.gz
 
 #modify hadoop-env
 cd /usr/local/$VERSION/conf
-echo "export JAVA_HOME=/usr/lib/jvm/java-1.6.0-openjdk-amd64" >> hadoop-env.sh
+echo "export JAVA_HOME=/usr/lib/jvm/java-1.6.0-openjdk-amd64" >> hbase-env.sh
 
 #get configuration files
 rm hbase-site.xml
