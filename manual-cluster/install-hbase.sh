@@ -31,12 +31,13 @@ chown hduser.hadoop $VERSION
 
 cd lib
 
-cp /usr/local/hadoop/hadoop-core-1.0.4.jar .
-chmod +wx hadoop-core-1.0.4.jar 
-rm hadoop-core-1.0.0.jar
+cp /usr/local/hadoop/hadoop-core-1.1.2.jar .
+chmod +wx hadoop-core-1.1.2.jar 
+rm hadoop-core-1.0.4.jar
 
 echo "export HBASE_MANAGES_ZK=true" >>hadoop-env.sh
 
 cd /home/hduser/
 wget https://github.com/ajehang/hands-on-hadoop-tutorial/raw/master/manual-cluster/conf/.bashrc
 
+mv .bashrc.1 .bashrc
