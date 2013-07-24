@@ -26,8 +26,8 @@ wget wget https://github.com/ajehang/hands-on-hadoop-tutorial/blob/master/manual
 # chmod, symbolic links
 cd /usr/local
 ln -s $VERSION hbase
-chown -R hduser.hadoop $VERSION
-chown hduser.hadoop $VERSION
+chown -R hduser:hadoop $VERSION
+chown hduser:hadoop $VERSION
 
 cd lib
 
