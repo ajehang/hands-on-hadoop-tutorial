@@ -45,8 +45,8 @@ wget https://github.com/ajehang/hands-on-hadoop-tutorial/raw/master/manual-clust
 # chmod, symbolic links
 cd /usr/local
 ln -s $VERSION hadoop
-chown -R hduser.hadoop $VERSION
-chown hduser.hadoop $VERSION
+chown -R hduser:hadoop $VERSION
+chown hduser:hadoop $VERSION
 
 
 #ssh stuff
