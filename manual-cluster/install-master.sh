@@ -32,6 +32,7 @@ chmod 750 /app/hadoop/tmp
 cd /usr/local/$VERSION/conf
 echo "export JAVA_HOME=/usr/lib/jvm/java-1.6.0-openjdk-amd64" >> hadoop-env.sh
 echo "export HADOOP_OPTS=-Djava.net.preferIPv4Stack=true" >> hadoop-env.sh
+echo "export HADOOP_CLASSPATH=$HBASE_HOME/*:$HBASE_HOME/conf:$HBASE_HOME/lib/*:$HADOOP_CLASSPATH"
 
 
 #get configuration files
