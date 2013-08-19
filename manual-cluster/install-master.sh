@@ -6,9 +6,9 @@ apt-get update
 apt-get -y install openjdk-6-jdk
 
 # set hostnames
-echo "10.1.0.20    master" >> /etc/hosts
-echo "10.1.0.75    slave1" >> /etc/hosts
-#echo "10.1.0.83    slave2" >> /etc/hosts
+echo "192.168.122.189 master.hbase.gwdg master" >> /etc/hosts
+echo "192.168.122.8   slave1.hbase.gwdg slave1" >> /etc/hosts
+echo "192.168.122.74  slave2.hbase.gwdg slave2" >> /etc/hosts
 #echo "10.1.0.130    slave3" >> /etc/hosts
 #echo "10.1.0.131    slave4" >> /etc/hosts
 
@@ -57,8 +57,8 @@ su - hduser -c "ssh -o StrictHostKeyChecking=no localhost echo "# login once, to
 
 scp /home/hduser/.ssh/id_rsa.pub root@slave1:/root
 scp /home/hduser/.ssh/id_rsa.pub root@slave2:/root
-scp /home/hduser/.ssh/id_rsa.pub root@slave3:/root
-scp /home/hduser/.ssh/id_rsa.pub root@slave4:/root
+#scp /home/hduser/.ssh/id_rsa.pub root@slave3:/root
+#scp /home/hduser/.ssh/id_rsa.pub root@slave4:/root
 
 cd /usr/local/$VERSION/conf
 rm masters
