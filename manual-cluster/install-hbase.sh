@@ -31,8 +31,8 @@ chown hduser:hadoop $VERSION
 
 cd /usr/local/hbase/lib
 
-cp /usr/local/hadoop/hadoop-core-1.1.2.jar .
-chmod +wx hadoop-core-1.1.2.jar 
+cp /usr/local/hadoop/$VERSION.jar .
+chmod +wx $VERSION.jar 
 rm hadoop-core-1.0.4.jar
 
 echo "export HBASE_MANAGES_ZK=true" >>hbase-env.sh
