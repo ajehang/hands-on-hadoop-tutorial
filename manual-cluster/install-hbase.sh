@@ -1,6 +1,6 @@
 #!/bin/bash
-MIRROR=http://apache.osuosl.org/hbase/hbase-0.94.8/
-VERSION=hbase-0.94.8
+MIRROR=http://apache.osuosl.org/hbase/hbase-0.94.10/
+VERSION=hbase-0.94.10
 
 #download hadoop, untar, put in /usr/local
 cd /tmp
