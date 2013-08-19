@@ -25,7 +25,7 @@ useradd  -G hadoop hduser -s /bin/bash -m
 
 # app folder; who uses this ????
 mkdir -p /app/hadoop/tmp
-chown -R hduser.hadoop /app/hadoop/tmp
+chown -R hduser:hadoop /app/hadoop/tmp
 chmod 750 /app/hadoop/tmp
 
 #modify hadoop-env
