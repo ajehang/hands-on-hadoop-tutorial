@@ -1,6 +1,6 @@
 #!/bin/bash
-MIRROR=http://www.gtlib.gatech.edu/pub/apache/hadoop/common/hadoop-1.1.2/
-VERSION=hadoop-1.1.2
+MIRROR=http://www.gtlib.gatech.edu/pub/apache/hadoop/common/hadoop-1.2.1/
+VERSION=hadoop-1.2.1
 
 apt-get update
 apt-get -y install openjdk-6-jdk
