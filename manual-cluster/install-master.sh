@@ -24,9 +24,9 @@ addgroup hadoop
 useradd  -G hadoop hduser -s /bin/bash -m
 
 # app folder; who uses this ????
-mkdir -p /app/hadoop/tmp
-chown -R hduser:hadoop /app/hadoop/tmp
-chmod 750 /app/hadoop/tmp
+mkdir -p /mnt/app/hadoop/tmp
+chown -R hduser:hadoop /mnt/app/hadoop/tmp
+chmod 750 /mnt/app/hadoop/tmp
 
 #modify hadoop-env
 cd /usr/local/$VERSION/conf
@@ -57,8 +57,8 @@ su - hduser -c "ssh -o StrictHostKeyChecking=no localhost echo "# login once, to
 
 scp /home/hduser/.ssh/id_rsa.pub root@slave1:/root
 scp /home/hduser/.ssh/id_rsa.pub root@slave2:/root
-#scp /home/hduser/.ssh/id_rsa.pub root@slave3:/root
-#scp /home/hduser/.ssh/id_rsa.pub root@slave4:/root
+scp /home/hduser/.ssh/id_rsa.pub root@slave3:/root
+scp /home/hduser/.ssh/id_rsa.pub root@slave4:/root
 
 cd /usr/local/$VERSION/conf
 rm masters
