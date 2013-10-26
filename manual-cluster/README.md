@@ -1,5 +1,4 @@
-For openStack open tcp port e.g 54310, 60000, 60010, 60020, 60030, 50010, 2888, 3888, 50020, 50030, 50075, 50090, 50105, 50060, 8020,  2181
-etc.
+For openStack open open all ports from 0 to 65535 and -1
 
 example: /etc/hosts
 
