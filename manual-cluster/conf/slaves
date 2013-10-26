@@ -1,3 +1,5 @@
 master.hbase.gwdg
 slave1.hbase.gwdg
 slave2.hbase.gwdg
+slave3.hbase.gwdg
+slave4.hbase.gwdg
