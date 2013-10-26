@@ -7,10 +7,10 @@ apt-get -y install openjdk-6-jdk
 
 # set hostnames
 echo "10.1.0.20 master.hbase.gwdg master" >> /etc/hosts
-echo "10.1.0.75   slave1.hbase.gwdg slave1" >> /etc/hosts
+echo "10.1.0.75 slave1.hbase.gwdg slave1" >> /etc/hosts
 echo "10.1.0.83  slave2.hbase.gwdg slave2" >> /etc/hosts
-echo "10.1.0.130    slave3" >> /etc/hosts
-echo "10.1.0.131    slave4" >> /etc/hosts
+echo "10.1.0.130 slave3.hbase.gwdg slave3" >> /etc/hosts
+echo "10.1.0.131 slave4.hbase.gwdg slave4" >> /etc/hosts
 
 #download hadoop, untar, put in /usr/local
 cd /tmp
