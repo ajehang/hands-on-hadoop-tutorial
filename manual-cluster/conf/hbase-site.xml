@@ -55,7 +55,7 @@
 
 <property>
 <name>hbase.hregion.max.filesize</name>
-<value>5242880</value>
+<value>268435456</value>
 </property>
 
 </configuration>
