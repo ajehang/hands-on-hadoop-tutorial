@@ -1,5 +1,5 @@
 #!/bin/bash
-MIRROR=http://apache.osuosl.org/hbase/hbase-0.94.12/
+MIRROR=https://archive.apache.org/dist/hbase/hbase-0.94.12/
 VERSION=hbase-0.94.12
 HADOOP_VERSION=hadoop-core-1.2.1
 #download hadoop, untar, put in /usr/local
