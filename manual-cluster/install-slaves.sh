@@ -7,10 +7,10 @@ apt-get -y install openjdk-6-jdk
 
 # set hostnames
 echo "10.254.1.2   master.hbase.gwdg master" >> /etc/hosts
-echo "10.254.1.5   slave1.hbase.gwdg slave1" >> /etc/hosts
-echo "10.254.1.6   slave2.hbase.gwdg slave2" >> /etc/hosts
-echo "10.254.1.7  slave3.hbase.gwdg slave3" >> /etc/hosts
-echo "10.254.1.8  slave4.hbase.gwdg slave4" >> /etc/hosts
+echo "10.254.1.13   slave1.hbase.gwdg slave1" >> /etc/hosts
+echo "10.254.1.14   slave2.hbase.gwdg slave2" >> /etc/hosts
+echo "10.254.1.15  slave3.hbase.gwdg slave3" >> /etc/hosts
+echo "10.254.1.16  slave4.hbase.gwdg slave4" >> /etc/hosts
 
 #download hadoop, untar, put in /usr/local
 cd /tmp
@@ -24,9 +24,9 @@ addgroup hadoop
 useradd  -G hadoop hduser -s /bin/bash -m
 
 # app folder; who uses this ????
-mkdir -p /mnt/app/hadoop/tmp
-chown -R hduser:hadoop /mnt/app/hadoop/tmp
-chmod 750 /mnt/app/hadoop/tmp
+#mkdir -p /mnt/app/hadoop/tmp
+#chown -R hduser:hadoop /mnt/app/hadoop/tmp
+#chmod 750 /mnt/app/hadoop/tmp
 
 #modify hadoop-env
 cd /usr/local/$VERSION/conf
